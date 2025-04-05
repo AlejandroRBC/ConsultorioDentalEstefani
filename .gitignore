@@ -1,0 +1,16 @@
+# NetBeans y Ant
+/build/
+/dist/
+/nbproject/private/
+/.nb-gradle/
+
+# Archivos generados
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@estiloBotones.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.VistaLoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" styleClass="parent">
+         <children>
+            <ImageView fitHeight="358.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/LogoLogin.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Dental Art" textFill="#49bfb3">
+               <font>
+                  <Font name="HeiseiMaruGoStd-W8" size="50.0" />
+               </font>
+            </Label>
+            <Label text="CREANDO TU SONRISA" textFill="#6a338d" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <Label text="¿Que doctor estara atendiendo?">
+               <font>
+                  <Font name="HeiseiMaruGoStd-W8" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <ChoiceBox prefWidth="150.0" />
+            <Button mnemonicParsing="false" text="Ingresar" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
