@@ -1,7 +1,7 @@
 # NetBeans y Ant
 /build/
 /dist/
-/nbproject
+/nbproject/private
 /.nb-gradle/
 
 # Archivos generados
