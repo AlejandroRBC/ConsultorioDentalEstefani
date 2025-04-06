@@ -15,10 +15,9 @@ public class AppPrincipal extends Application{
         //throw new UnsupportedOperationException("Aun no soportado"); // al activar esto muere el parent root
        
         //Parent root = FXMLLoader.load(getClass().getResource("/Login/VistaLogin.fxml"));
-        
-        
-        
-        Parent root = FXMLLoader.load(getClass().getResource("ListaPacientes/VistaListaPacientes.fxml"));
+
+        //Parent root = FXMLLoader.load(getClass().getResource("ListaPacientes/VistaListaPacientes.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AgendarCita/VistaAgendarCita.fxml"));
         PrincipalStage.setTitle("Inicio Sesion");
         PrincipalStage.setScene(new Scene(root));
         PrincipalStage.setResizable(false);
