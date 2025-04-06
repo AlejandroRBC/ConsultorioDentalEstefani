@@ -17,7 +17,7 @@ public class AppPrincipal extends Application{
         //Parent root = FXMLLoader.load(getClass().getResource("/Login/VistaLogin.fxml"));
         
         
-        //comentario 2
+        
         Parent root = FXMLLoader.load(getClass().getResource("ListaPacientes/VistaListaPacientes.fxml"));
         PrincipalStage.setTitle("Inicio Sesion");
         PrincipalStage.setScene(new Scene(root));
