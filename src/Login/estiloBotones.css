@@ -1,5 +1,6 @@
 
 Button {
+    -fx-border-width: 2;
     -fx-background-color: #69358C;
     -fx-text-fill: white;
     -fx-font-style: bold;
@@ -7,6 +8,8 @@ Button {
 }
 
 Button:hover {
-    -fx-background-color: #5A3673;
+    -fx-background-color: #cc66ff;
 }
-
+ChoiceBox{
+    -fx-background-color: #ccccff;
+}
