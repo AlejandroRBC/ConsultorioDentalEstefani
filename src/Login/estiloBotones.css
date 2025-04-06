@@ -1,13 +1,12 @@
-/*
-.button {
+
+Button {
     -fx-background-color: #69358C;
     -fx-text-fill: white;
-    
     -fx-font-style: bold;
     -fx-padding: 8;
 }
-*/
-.button:hover {
+
+Button:hover {
     -fx-background-color: #5A3673;
 }
 
