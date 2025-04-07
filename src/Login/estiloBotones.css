@@ -11,5 +11,9 @@ Button:hover {
     -fx-background-color: #cc66ff;
 }
 ChoiceBox{
-    -fx-background-color: #ccccff;
+     -fx-background-color: #f5f5f5;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;  /* Bordes redondeados */
+    -fx-border-width: 1px;
+    -fx-padding: 3px;
 }
