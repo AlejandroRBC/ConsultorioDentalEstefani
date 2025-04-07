@@ -6,18 +6,12 @@
 
 }
 
-
 /*esta parte controla el header de entrada, el VBox*/
 #head{
     -fx-padding: 24px;
-    
     -fx-font-size:20px;
-    -fx-background-color: bisque;
 }
-#head #entrada{
-    -fx-font-size: 15px;
-    
-}
+
 /*Esta parte quiere manejar el tableview*/
 TableView{
     -fx-margin: 23px;
@@ -26,6 +20,5 @@ TableView{
 /* esta parte controla el HBox de la parte baja del panel*/
 #foot{
     -fx-spacing: 10px;
-    -fx-background-color: bisque;
 }
 

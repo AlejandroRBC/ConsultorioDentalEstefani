@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -51,32 +51,23 @@ public class ControllerListaPacientes implements Initializable {
         tcTelefono.setCellValueFactory(new PropertyValueFactory<>("telefono"));
         
         tcNroTratamientos.setCellValueFactory(celldata -> null);
-        tcAdeudado.setCellValueFactory(celldata -> null);
-        
-        
+        tcAdeudado.setCellValueFactory(celldata -> null);   
         Cargarpacientes();
     }
-    
-    
     public void Cargarpacientes(){
-        
         listapacientes.clear();
         String consulta = "SELECT * FROM paciente";
         try (Connection conn = ConexionBD.getConexion();
                 PreparedStatement pstmt = conn.prepareStatement(consulta);
-                ResultSet rs = pstmt.executeQuery();
-                        ){
+                ResultSet rs = pstmt.executeQuery();){
              while (rs.next()) {
+                int id = rs.getInt("ID_paciente");
                 String nombre = rs.getString("nombre");
                 String paterno = rs.getString("paterno");
+                String materno = rs.getString("materno");
+                String fecha_nac = rs.getString("Fecha_Nac");
                 String telefono = rs.getString("nro_telefono");
-                
-                String adeudado = "deuda ";
-                String nrotrat = "5 tratas";
-                
-                System.out.println("----PACIENTE:");
-                ModeloPaciente auxPaciente = new ModeloPaciente(nombre, paterno, telefono,adeudado,nrotrat);
-                auxPaciente.toString();
+                ModeloPaciente auxPaciente = new ModeloPaciente(nombre, paterno, materno, fecha_nac, telefono);
                 listapacientes.add(auxPaciente);
             }
             tvPacientes.setItems(listapacientes);
@@ -84,6 +75,14 @@ public class ControllerListaPacientes implements Initializable {
             System.out.println("No se conecto a la BD :" + e);
         }
     }
-    
-    
+
+    @FXML
+    void SeleccionarPaciente(ActionEvent event) {
+        
+        ModeloPaciente aux = tvPacientes.getSelectionModel().getSelectedItem();
+        if (aux!=null) {
+            System.out.println(aux.toString());
+        }else{
+        }
+    }
 }

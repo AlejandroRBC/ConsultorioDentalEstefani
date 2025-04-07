@@ -36,13 +36,13 @@
                <children>
                   <Label text="Bienvenido Doctor :" />
                   <Label text="NOMBRE DEL DOCTOR" />
-                  <Label id="entrada" alignment="TOP_LEFT" text="Seleccione  un paciente y podra accdeer a los botones" />
+                  <Label id="entrada" alignment="TOP_LEFT" text="Seleccione  un paciente y podra acceder a los botones" />
                </children></VBox>
          </top>
          <right>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="Seleccionar">
+                  <Button mnemonicParsing="false" onAction="#SeleccionarPaciente" text="Seleccionar">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
