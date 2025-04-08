@@ -1,6 +1,21 @@
 .mainFxmlClass {
-
+    -fx-font-size: 15.5 px;
 }
+
+
+/* Estilos de en medio */
+#AreaDatosPersonales{
+    
+}
+#AreaDatosPersonales TextField{
+    
+}
+
+
+/* botones de abajo del todo */
 #BotonesOpcion{
     -fx-spacing: 15px;
+}
+#BotonesOpcion Button{
+
 }
