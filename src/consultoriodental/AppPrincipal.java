@@ -19,7 +19,7 @@ public class AppPrincipal extends Application{
         //Parent root = FXMLLoader.load(getClass().getResource("ListaPacientes/VistaListaPacientes.fxml"));
         
         
-        Parent root = FXMLLoader.load(getClass().getResource("CRUDPaciente/ReadPaciente/VistaSeleccionarPaciente.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("CRUDPaciente/CreatePaciente/VistaRegistroPaciente.fxml"));
         PrincipalStage.setTitle("PRUEBA DE PAGINA");
         PrincipalStage.setScene(new Scene(root));
         PrincipalStage.setResizable(false);

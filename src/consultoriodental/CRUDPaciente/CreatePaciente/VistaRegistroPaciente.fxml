@@ -12,19 +12,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="consultoriodental.CRUDPaciente.InsertPaciente.ControllerRegistroPaciente">
-    <stylesheets>
-        <URL value="@vistaregistropaciente.css" />
-    </stylesheets>
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consultoriodental.CRUDPaciente.InsertPaciente.ControllerRegistroPaciente">
+   <stylesheets>
+      <URL value="@../InsertPaciente/vistaregistropaciente.css" />
+   </stylesheets>
    <children>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0">
+      <Pane layoutX="5.0" layoutY="5.0" prefHeight="600.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="346.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="225.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Imagenes/Usuario.png" />
                </image>
             </ImageView>
-            <VBox id="AreaDatosPersonales" layoutX="198.0" layoutY="224.0" prefHeight="226.0" prefWidth="446.0">
+            <VBox id="AreaDatosPersonales" layoutX="77.0" layoutY="249.0" prefHeight="226.0" prefWidth="446.0">
                <children>
                   <Label text="Nombre" />
                   <TextField />
@@ -38,7 +38,7 @@
                   <TextField />
                </children>
             </VBox>
-            <HBox id="BotonesOpcion" alignment="CENTER" layoutX="160.0" layoutY="520.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="52.0" prefWidth="521.0" stylesheets="@../ReadPaciente/vistaseleccionarpaciente.css">
+            <HBox id="BotonesOpcion" alignment="CENTER" layoutX="40.0" layoutY="502.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="52.0" prefWidth="521.0" stylesheets="@../ReadPaciente/vistaseleccionarpaciente.css">
                <children>
                   <Button mnemonicParsing="false" text="Guardar" />
                   <Button mnemonicParsing="false" text="Volver" />
