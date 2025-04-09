@@ -1,3 +1,11 @@
 .mainFxmlClass {
-    -fx-font-size: 200px;
+    -fx-font-size: 15px;
+}
+
+
+
+// Botones de abajo 
+#BotonesOpcion{
+     -fx-spacing: 15px;
+
 }

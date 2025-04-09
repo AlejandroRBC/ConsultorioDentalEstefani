@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consultoriodental.CRUDPaciente.InsertPaciente.ControllerRegistroPaciente">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consultoriodental.CRUDPaciente.CreatePaciente.ControllerRegistroPaciente">
    <stylesheets>
-      <URL value="@../InsertPaciente/vistaregistropaciente.css" />
+      <URL value="@../CreatePaciente/vistaregistropaciente.css" />
    </stylesheets>
    <children>
       <Pane layoutX="5.0" layoutY="5.0" prefHeight="600.0" prefWidth="600.0">
@@ -38,10 +38,11 @@
                   <TextField />
                </children>
             </VBox>
-            <HBox id="BotonesOpcion" alignment="CENTER" layoutX="40.0" layoutY="502.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="52.0" prefWidth="521.0" stylesheets="@../ReadPaciente/vistaseleccionarpaciente.css">
+            <Label layoutX="246.0" layoutY="27.0" text="Registro de Paciente" />
+            <HBox id="BotonesOpcion" alignment="CENTER" layoutX="80.0" layoutY="514.0" prefHeight="45.0" prefWidth="446.0">
                <children>
-                  <Button mnemonicParsing="false" text="Guardar" />
                   <Button mnemonicParsing="false" text="Volver" />
+                  <Button mnemonicParsing="false" text="Guardar" />
                </children>
             </HBox>
          </children>
