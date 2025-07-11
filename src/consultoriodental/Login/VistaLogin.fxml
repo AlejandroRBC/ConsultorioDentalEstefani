@@ -11,13 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@estiloBotones.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.VistaLoginController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@estiloBotones.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consultoriodental.Login.VistaLoginController">
    <children>
-      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" styleClass="parent">
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" styleClass="parent">
          <children>
             <ImageView fitHeight="358.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Imagenes/LogoLogin.jpg" />
+                  <Image url="@../Imagenes/LogoLogin.jpg" />
                </image>
                <VBox.margin>
                   <Insets bottom="50.0" />

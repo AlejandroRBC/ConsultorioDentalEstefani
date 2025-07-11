@@ -1,4 +1,6 @@
-
+body{
+    -fx-background-color: white;
+}
 Button {
     -fx-border-width: 2;
     -fx-background-color: #69358C;

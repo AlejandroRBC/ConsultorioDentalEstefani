@@ -1,5 +1,5 @@
 
-package consultoriodental.ListaPacientes;
+package consultoriodental.Modelos;
 
 
 public class ModeloPaciente {

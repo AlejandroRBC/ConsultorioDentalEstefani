@@ -1,5 +1,5 @@
 
-package consultoriodental;
+package consultoriodental.Modelos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
